@@ -45,6 +45,14 @@
   cursor: pointer;
 }
 
+.gpt3__navbar-links_container p {
+  transition: 0.2s;
+}
+
+.gpt3__navbar-links_container p:hover {
+  color: #ff4820;
+}
+
 .gpt3__navbar-sign button,
 .gpt3__navbar-menu button {
   padding: 0.5rem 1rem;
@@ -58,6 +66,15 @@
   border: 0;
   outline: none;
   cursor: pointer;
+}
+
+.gpt3__navbar-sign button {
+  border: 1px solid #ff4820;
+  transition: 0.2s;
+}
+
+.gpt3__navbar-sign button:hover {
+  background-color: transparent;
 }
 
 .gpt3__navbar-menu {

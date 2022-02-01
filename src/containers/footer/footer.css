@@ -37,6 +37,12 @@
   line-height: 21px;
   color: #ffffff;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.gpt3__footer-btn button:hover {
+  border-color: #ff4820;
+  color: #ff4820;
 }
 
 .gpt3__footer-links {
@@ -117,6 +123,14 @@
 }
 
 @media screen and (max-width: 550px) {
+  .gpt3__footer-btn button {
+    transition: none;
+  }
+  .gpt3__footer-btn button:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
   .gpt3__footer-heading h1 {
     font-size: 34px;
     line-height: 42px;

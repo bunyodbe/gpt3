@@ -53,17 +53,22 @@
   width: 100%;
   min-height: 50px;
   background: #ff4820;
+  border: 1px solid #ff4820;
   border-radius: 0 5px 5px 0;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 27px;
   color: #ffffff;
   cursor: pointer;
   outline: none;
   padding: 0 1rem;
-  border: none;
+  transition: 0.2s;
+}
+
+.gpt3__header-content__input button:hover {
+  background-color: transparent;
 }
 
 .gpt3__header-content__people {
@@ -108,6 +113,10 @@
   .gpt3__header-content {
     margin: 0 0 3rem;
   }
+
+  .gpt3__header-content__input button {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -133,6 +142,14 @@
   .gpt3__header-content__input button {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .gpt3__header-content__input button {
+    transition: none;
+  }
+
+  .gpt3__header-content__input button:hover {
+    background-color: #ff4820;
   }
 }
 

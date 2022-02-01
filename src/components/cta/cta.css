@@ -36,7 +36,7 @@
   padding: 0.5rem 1.5rem;
   background: #000000;
   border-radius: 40px;
-  border: none;
+  border: 1px solid #000000;
   outline: none;
   font-family: var(--font-family);
   font-weight: bold;
@@ -45,6 +45,12 @@
   color: #ffffff;
   cursor: pointer;
   min-width: 150px;
+  transition: 0.2s;
+}
+
+.gpt3__cta-btn button:hover {
+  background-color: transparent;
+  color: #000000;
 }
 
 @media screen and (max-width: 650px) {
@@ -62,13 +68,21 @@
     margin: 4rem 2rem;
   }
   .gpt3__cta-content h3 {
-      font-size: 18px;
-      line-height: 32px;
+    font-size: 18px;
+    line-height: 32px;
   }
 
   .gpt3__cta-btn button {
-      font-size: 14px;
-      line-height: 28px;
+    font-size: 14px;
+    line-height: 28px;
   }
 
+  .gpt3__cta-btn button {
+    transition: none;
+  }
+
+  .gpt3__cta-btn button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
 }
